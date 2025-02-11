@@ -15,6 +15,9 @@ export default function Todo({ todo, toggleComplete, deleteTodo }: TodoProps) {
       <p className={todo?.completed ? "todo-title-completed " : ""}>
         {todo?.title}
       </p>
+      <p className={todo?.completed ? "todo-title-completed " : ""}>
+        {todo.body}
+      </p>
       <div className="btn-group">
         <Button
           variant="outline-primary"
